@@ -52,7 +52,10 @@ public class MainActivity extends Activity {
 
       SoapObject queryList = new SoapObject(NAME_SPACE, "QueryList");
       SoapObject query = new SoapObject(NAME_SPACE, "Query");
+
+      /******** TO SEARCH ANOTHER WORD, CHANGE THIS WORD! *********/
       targetWord = "かた";
+
       query.addProperty(NAME_SPACE, "Words", targetWord);
       query.addProperty(NAME_SPACE, "ScopeID", "HEADWORD");
       query.addProperty(NAME_SPACE, "MatchOption", "EXACT");
